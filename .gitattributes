@@ -1,0 +1,5 @@
+#Source:
+#https://docs.godotengine.org/en/latest/community/asset_library/submitting_to_assetlib.html#recommendations
+
+# Normalize line endings for all files that Git considers text files.
+* text=auto eol=lf

@@ -1,6 +1,6 @@
 # Godot Asset Library Tool
 
-Submit your assets to the [Godot Asset Library](https://godotengine.org/asset-library/assets) with ease.
+Submit your assets to the [Godot Asset Library](https://godotengine.org/asset-library) with ease.
 
 ## How it works
 

@@ -26,7 +26,7 @@ Your `.gitignore` file will be automatically copied to the root of the distribut
 
 Submodules are replaced with subtrees in the distribution repository. The source repository is also referenced as a subtree in the distribution repository.
 
-> - [x] The license needs to be correct. The license listed on the asset library must match the license in the repository. The repo MUST have a license file, called either "LICENSE" or "LICENSE.md". This file must contain the license text itself and a copyright statement that includes the year(s) and copyright holder.
+> - [x] The license needs to be correct. The license listed on the Asset Library must match the license in the repository. The repo MUST have a license file, called either "LICENSE" or "LICENSE.md". This file must contain the license text itself and a copyright statement that includes the year(s) and copyright holder.
 
 Your `LICENSE` file will be automatically copied to the root of the distribution repository.
 
@@ -62,7 +62,7 @@ This has to be done manually, since GALT can't just decide which files should be
 
 Example files belong in the source repository, not the distribution repository, so this has to be done manually. [^1]
 
-> - [x] Consider adding a .gitattributes file to your repo. This file allows giving extra instructions to Git, such as specifying line endings and listing files not required for your asset to function with the export-ignore directive. This directive removes such files from the resulting ZIP file, preventing them from being downloaded by the asset library users. [...]
+> - [x] Consider adding a .gitattributes file to your repo. This file allows giving extra instructions to Git, such as specifying line endings and listing files not required for your asset to function with the export-ignore directive. This directive removes such files from the resulting ZIP file, preventing them from being downloaded by the Asset Library users. [...]
 
 GALT will automatically create a `.gitattributes` file in the distribution repository to comply with godot's line endings and to exclude non-essential files.
 

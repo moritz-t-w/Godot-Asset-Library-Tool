@@ -12,7 +12,7 @@ Using GALT you can get some of the requirements and recommendations for submitti
 
 > ### Requirements
 >
-> [...](https://docs.godotengine.org/en/latest/community/asset_library/submitting_to_assetlib.html#requirements)
+> [[...]](https://docs.godotengine.org/en/latest/community/asset_library/submitting_to_assetlib.html#requirements)
 
 > - [ ] The asset must work. If the asset doesn't run or otherwise doesn't work in the specified Godot version, then it will be rejected.
 
@@ -40,7 +40,7 @@ This has to be done manually. [^1]
 
 > ### Recommendations
 >
-> [...](https://docs.godotengine.org/en/latest/community/asset_library/submitting_to_assetlib.html#requirements)
+> [[...]](https://docs.godotengine.org/en/latest/community/asset_library/submitting_to_assetlib.html#requirements)
 
 > - [x] When creating non-project assets, it is common practice to place your files inside of an addons/asset_name/ folder. Do this to avoid having your files clash with other assets, or with the files of users installing your asset. This folder will not be automatically generated when a user installs your asset.
 

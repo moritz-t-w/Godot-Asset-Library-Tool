@@ -1,0 +1,3 @@
+.gitignore,https://raw.githubusercontent.com/aaronfranke/gitignore/godot/Godot.gitignore
+.gitattributes,./.gitattributes.asset.ini
+README.md,./README.md.asset.md

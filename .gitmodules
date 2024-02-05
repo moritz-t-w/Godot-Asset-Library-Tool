@@ -1,0 +1,3 @@
+[submodule "git_subtree"]
+	path = git_subtree
+	url = git@github.com:moritz-t-w/Python-Git-Subtree.git

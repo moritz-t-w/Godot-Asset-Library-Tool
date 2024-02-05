@@ -2,13 +2,14 @@
 
 Submit your assets to the [Godot Asset Library](https://godotengine.org/asset-library) with ease.
 
-## How it works
-
-GALT creates a GitHub repository for your asset with your source repository as a subtree and necessary files for the Asset Library. This is to avoid the need to have the nonstandard directory structure required by the Asset Library in your source repository, which allows you to keep your source repository organized and modular.
+This tool automatically creates a GitHub repository for your asset with your source repository referenced as a subtree.
+In the root of this repository, some necessary files for the Asset Library are created or copied from the source.
+This is to avoid using the nonstandard directory structure required by the Asset Library in your source repository,
+so you can keep your repository modular and organize it your way. You could even use your source as a git submodule!
 
 ## Automatic partial compliance with [Submission guidelines](https://docs.godotengine.org/en/latest/community/asset_library/submitting_to_assetlib.html)
 
-Using GALT you can get some of the requirements and recommendations for submitting an asset to the Asset Library fulfilled automatically:
+GALT automatically fulfills some of the requirements and recommendations for submitting an asset to the Asset Library:
 
 > ### Requirements
 >
@@ -24,7 +25,8 @@ Your `.gitignore` file will be automatically copied to the root of the distribut
 
 > - [x] No submodules, or any submodules must be non-essential. GitHub does not include submodules in the downloaded ZIP file, so if the asset needs the contents of the submodule, your asset won't work.
 
-Submodules are replaced with subtrees in the distribution repository. The source repository is also referenced as a subtree in the distribution repository.
+Submodules are replaced with subtrees in the distribution repository.
+The source repository is also referenced as a subtree in the distribution repository.
 
 > - [x] The license needs to be correct. The license listed on the Asset Library must match the license in the repository. The repo MUST have a license file, called either "LICENSE" or "LICENSE.md". This file must contain the license text itself and a copyright statement that includes the year(s) and copyright holder.
 
@@ -44,7 +46,9 @@ This has to be done manually. [^1]
 
 > - [x] When creating non-project assets, it is common practice to place your files inside of an addons/asset_name/ folder. Do this to avoid having your files clash with other assets, or with the files of users installing your asset. This folder will not be automatically generated when a user installs your asset.
 
-The purpose of GALT is to create a distribution repository that is ready to be used as an asset. The source repository is referenced as a subtree in the distribution repository under `addons/<asset_name>`, where `<asset_name>` is replaced with the name of the asset.
+The purpose of GALT is to create a distribution repository that is ready to be used as an asset.
+The subtree is placed in the distribution repository under `addons/<asset_name>`,
+where `<asset_name>` is replaced with the name of the asset.
 
 > - [ ] Fix or suppress all script warnings. The warning system is there to help identify issues with your code, but people using your asset don't need to see them.
 
@@ -64,6 +68,6 @@ Example files belong in the source repository, not the distribution repository, 
 
 > - [x] Consider adding a .gitattributes file to your repo. This file allows giving extra instructions to Git, such as specifying line endings and listing files not required for your asset to function with the export-ignore directive. This directive removes such files from the resulting ZIP file, preventing them from being downloaded by the Asset Library users. [...]
 
-GALT will automatically create a `.gitattributes` file in the distribution repository to comply with godot's line endings and to exclude non-essential files.
+GALT will automatically create a `.gitattributes` file in the distribution repository with godot's recommended settings.
 
 [^1]: GALT will not modify the source repository or the copy of it inside the distribution repository.

@@ -1,9 +1,10 @@
 # Godot Asset Library Tool
 
-Submit your assets to the [Godot Asset Library](https://godotengine.org/asset-library) with ease.
+_Submit your assets to the [Godot Asset Library](https://godotengine.org/asset-library) with ease._
 
 This tool automatically creates a GitHub repository for your asset with your source repository referenced as a subtree.
 In the root of this repository, some necessary files for the Asset Library are created or copied from the source.
+
 This is to avoid using the nonstandard directory structure required by the Asset Library in your source repository,
 so you can keep your repository modular and organize it your way. You could even use your source as a git submodule!
 
